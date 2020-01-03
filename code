@@ -17,8 +17,8 @@ for i in range(100, number):
 
     while remain > 0:
         digit = remain % 10
-        sum += digit ** power
-        remain //= 10
+        sum = sum + digit ** power
+        remain = remain // 10
 
     if sum == i:
         print(i, "this is a Armstrong number")
